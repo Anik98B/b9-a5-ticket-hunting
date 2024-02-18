@@ -142,9 +142,10 @@
                                 </div>
                             </div>
                             <div class="flex gap-2">
-                                <button class="btn flex items-center bg-[#1DD10026]"><img
-                                        src="./images/seat-green.png"><span class=" text-[#1DD100] font-medium">16 Seats
-                                        left</span></button>
+                                <button class="btn flex items-center bg-[#1DD10026] text-[#1DD100] "><img
+                                        src="./images/seat-green.png">
+                                        <span id="available-seats" class=" font-medium">16</span>Seats
+                                        left</button>
                             </div>
                         </div>
                         <hr class="my-5">
@@ -211,37 +212,37 @@
                             <div>
                                 <div class="flex justify-center gap-8 my-3 w-full grid grid-cols-5">
                                     <kbd class="kbd border-none bg-white">A</kbd>
-                                    <button class="btn">A1</button>
-                                    <button class="btn">A2</button>
-                                    <button class="btn">A3</button>
-                                    <button class="btn">A4</button>
+                                    <button class="seat btn">A1</button>
+                                    <button class="seat btn">A2</button>
+                                    <button class="seat btn">A3</button>
+                                    <button class="seat btn">A4</button>
                                 </div>
                             </div>
                             <div>
                                 <div class="flex justify-center gap-8 my-3 w-full grid grid-cols-5">
                                     <kbd class="kbd border-none bg-white">B</kbd>
-                                    <button class="btn">B1</button>
-                                    <button class="btn">B2</button>
-                                    <button class="btn">B3</button>
-                                    <button class="btn">B4</button>
+                                    <button class="seat btn">B1</button>
+                                    <button class="seat btn">B2</button>
+                                    <button class="seat btn">B3</button>
+                                    <button class="seat btn">B4</button>
                                 </div>
                             </div>
                             <div>
                                 <div class="flex justify-center gap-8 my-3 w-full grid grid-cols-5">
                                     <kbd class="kbd border-none bg-white">C</kbd>
-                                    <button class="btn">C1</button>
-                                    <button class="btn">C2</button>
-                                    <button class="btn">C3</button>
-                                    <button class="btn">C4</button>
+                                    <button class="seat btn">C1</button>
+                                    <button class="seat btn">C2</button>
+                                    <button class="seat btn">C3</button>
+                                    <button class="seat btn">C4</button>
                                 </div>
                             </div>
                             <div>
                                 <div class="flex justify-center gap-8 my-3 w-full grid grid-cols-5">
                                     <kbd class="kbd border-none bg-white">D</kbd>
-                                    <button class="btn">D1</button>
-                                    <button class="btn">D2</button>
-                                    <button class="btn">D3</button>
-                                    <button class="btn">D4</button>
+                                    <button class="seat btn">D1</button>
+                                    <button class="seat btn">D2</button>
+                                    <button class="seat btn">D3</button>
+                                    <button class="seat btn">D4</button>
                                 </div>
                             </div>
 
@@ -253,14 +254,16 @@
                         <hr class="my-5">
                         <div class="bg-[#F7F8F8]  border rounded-xl p-6">
                             <div class="flex justify-between ">
-                                <h6 class="font-medium">Seat <span
+                                <h6 class="font-medium">Seat <span id="seat-count"
                                         class="bg-[#1DD100] rounded px-1 text-[#FFFFFF]">0</span></h6>
                                 <h6 class="font-medium">Class</h6>
                                 <h6 class="font-medium">Price</h6>
                             </div>
                             <hr class="my-5">
                             <div>
-
+                                <ul id="Selected-list">
+                                    
+                                </ul>
                             </div>
                             <hr class="my-5">
                             <div class="flex justify-between mb-4">
