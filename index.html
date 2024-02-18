@@ -61,7 +61,8 @@
                             </h1>
                             <p class="mb-5">The decision from transport secretary Mark Harper comes after widespread
                                 concerns from rail users, trade unions, and disability advocacy groups.</p>
-                            <button class="btn bg-[#1DD100] border-[#1DD100] font-bold ">Buy Tickets</button>
+                            <button onclick="handlerButton()" class="btn bg-[#1DD100] border-[#1DD100] font-bold ">Buy
+                                Tickets</button>
                         </div>
                     </div>
                 </div>
@@ -142,7 +143,7 @@
                             </div>
                             <div class="flex gap-2">
                                 <button class="btn flex items-center bg-[#1DD10026]"><img
-                                        src="./images/seat-green.png"><span class=" text-[#1DD100] font-medium">40 Seats
+                                        src="./images/seat-green.png"><span class=" text-[#1DD100] font-medium">16 Seats
                                         left</span></button>
                             </div>
                         </div>
@@ -159,11 +160,11 @@
                                     <p class="font-semibold">9:00 PM</p>
                                 </div>
                                 <hr class="my-5">
-                                <div class="flex gap-8">
-                                    <div class="bg-[#03071221] rounded-md px-8 py-3">
+                                <div class="flex gap-6">
+                                    <div class="bg-[#03071221] rounded-md px-7 py-3">
                                         <h6 class="text-[#030712] font-medium">Boarding Point - Laxmipur</h6>
                                     </div>
-                                    <div class="bg-[#03071221] rounded-md px-8 py-3">
+                                    <div class="bg-[#03071221] rounded-md px-7 py-3">
                                         <h6 class="text-[#030712] font-medium">Dropping Point - Bogura</h6>
                                     </div>
                                     <div class="bg-[#03071221] rounded-md px-8 py-3">
@@ -187,7 +188,7 @@
             </section>
             <br> <br>
             <!-- seat-select -->
-            <section class="bg-white mx-20 rounded-xl">
+            <section id="seat-select" class="bg-white mx-20 rounded-xl">
                 <div class="flex gap-10">
                     <div class="w-2/3 p-4">
                         <h4 class="text-2xl font-semibold">Select Your Seat</h4>
@@ -252,11 +253,15 @@
                         <hr class="my-5">
                         <div class="bg-[#F7F8F8]  border rounded-xl p-6">
                             <div class="flex justify-between ">
-                                <h6 class="font-medium">Seat <span class="bg-[#1DD100] rounded px-1 text-[#FFFFFF]">0</span></h6>
+                                <h6 class="font-medium">Seat <span
+                                        class="bg-[#1DD100] rounded px-1 text-[#FFFFFF]">0</span></h6>
                                 <h6 class="font-medium">Class</h6>
                                 <h6 class="font-medium">Price</h6>
                             </div>
                             <hr class="my-5">
+                            <div>
+
+                            </div>
                             <hr class="my-5">
                             <div class="flex justify-between mb-4">
                                 <h5 class="font-medium">Total Price</h5>
@@ -274,6 +279,26 @@
                                 <h5 class="font-medium">Grand Total</h5>
                                 <h5 class="font-medium">BDT 00</h5>
                             </div>
+                        </div>
+                        <div class="space-y-5 mt-6">
+                            <label class="form-control w-full">
+                                <div class="label mb-3">
+                                    <span class="label-text text-xl font-bold">Passenger Name*</span>
+                                </div>
+                                <input type="text" placeholder="Enter your name" class="input input-bordered w-full">
+                            </label>
+                            <label class="form-control w-full">
+                                <div class="label mb-3">
+                                    <span class="label-text text-xl font-bold">Phone Number*</span>
+                                </div>
+                                <input type="number" placeholder="Enter your phone number" class="input input-bordered w-full">
+                            </label>
+                            <label class="form-control w-full">
+                                <div class="label mb-3">
+                                    <span class="label-text text-xl font-bold">Email ID</span>
+                                </div>
+                                <input type="text" placeholder="Enter your email id" class="input input-bordered w-full">
+                            </label>
                         </div>
                         <div class="mt-6">
                             <button class="btn w-full bg-[#1DD100] font-extrabold text-[#FFFFFF]">Next</button>
@@ -310,6 +335,7 @@
     <footer>
 
     </footer>
+    <script src="scripts/tickit.js"></script>
 </body>
 
 </html>
