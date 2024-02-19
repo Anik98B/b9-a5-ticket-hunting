@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400,500&family=Raleway:ital,wght@1,100..900&&display=swap');
 
-.font-inter {
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Raleway:ital,wght@1,100..900&family=Roboto:wght@400;500;700;900&display=swap');
+
+.inter {
     font-family: "Inter", sans-serif;
 }
 
-.font-Raleway {
+.Raleway {
     font-family: "Raleway", sans-serif;
 }
